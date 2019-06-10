@@ -25,7 +25,7 @@ class App extends React.Component {
         <div className="container-fluid">
           <div className="row row-eq-height justify-content-center">
             {this.state.films.map(film => (
-              <div key={film.id} className="col-sm-3 m-3">
+              <div key={film.id} className="col-sm-3 xs-1 m-3">
                 <MovieCard film={film} />
               </div>
             ))}
