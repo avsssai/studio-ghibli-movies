@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/studio-ghibli-movies/static/css/main.66afe323.chunk.css",
+    "main.js": "/studio-ghibli-movies/static/js/main.a25d02ad.chunk.js",
+    "main.js.map": "/studio-ghibli-movies/static/js/main.a25d02ad.chunk.js.map",
+    "runtime~main.js": "/studio-ghibli-movies/static/js/runtime~main.a1bdb3d3.js",
+    "runtime~main.js.map": "/studio-ghibli-movies/static/js/runtime~main.a1bdb3d3.js.map",
+    "static/css/2.22a7d4ef.chunk.css": "/studio-ghibli-movies/static/css/2.22a7d4ef.chunk.css",
+    "static/js/2.fd5f17ab.chunk.js": "/studio-ghibli-movies/static/js/2.fd5f17ab.chunk.js",
+    "static/js/2.fd5f17ab.chunk.js.map": "/studio-ghibli-movies/static/js/2.fd5f17ab.chunk.js.map",
+    "index.html": "/studio-ghibli-movies/index.html",
+    "precache-manifest.6c5c3448ac7a4557b751b109d82a2e31.js": "/studio-ghibli-movies/precache-manifest.6c5c3448ac7a4557b751b109d82a2e31.js",
+    "service-worker.js": "/studio-ghibli-movies/service-worker.js",
+    "static/css/2.22a7d4ef.chunk.css.map": "/studio-ghibli-movies/static/css/2.22a7d4ef.chunk.css.map",
+    "static/css/main.66afe323.chunk.css.map": "/studio-ghibli-movies/static/css/main.66afe323.chunk.css.map"
+  }
+}
