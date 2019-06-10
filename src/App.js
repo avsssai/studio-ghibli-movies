@@ -1,26 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
+import React from "react";
+import FileHeader from "./FileHeader";
+import MovieCard from "./MovieCard";
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  componentWillMount() {
+    this.getFilmsData();
+  }
+  constructor(props) {
+    super(props);
+    this.state = {
+      films: []
+    };
+  }
+  getFilmsData = () => {
+    fetch("https://ghibliapi.herokuapp.com/films")
+      .then(data => data.json())
+      .then(res => this.setState({ films: res }));
+  };
+  render() {
+    return (
+      <div className='main'>
+        <FileHeader className='header'/>
+        <div className="container-fluid">
+          <div className="row row-eq-height justify-content-center">
+            {this.state.films.map(film => (
+              <div key={film.id} className="col-sm-3 m-3">
+                <MovieCard film={film} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
